@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.parent{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.parent h2{
+   position: absolute;
+   top: 25%;
+   left: 15%;
+   transform: translate(-50% -50%);
+   font-size: 200px;
+   /* width: 100%; */
+   text-align: center;
+   color: rgba(62, 62, 62, 0.904);
+}
+
+.hath{
+    display: inline-block;
+    animation: shaking 3s ease-in-out 0s infinite both;
+}
+
+@keyframes shaking{
+    50%{
+        transform :rotate(45deg)
+    }
+}
+
+.hii{
+    display: inline-block;
+    position: relative;
+    left: -50%;
+    animation: coming1 3s ease-in-out 0s 1 both;
+    
+}
+
+@keyframes coming1{
+    to{
+        left: 0%;
+        color: black;
+    }
+}
+
+.name{
+    display: inline-block;
+    position: relative;
+    right: -100%;
+    animation: coming2 3s ease-in-out 0s 1 both;
+    
+}
+
+@keyframes coming2{
+    to{
+        right: 0%;
+        color: black;
+    }
+}
